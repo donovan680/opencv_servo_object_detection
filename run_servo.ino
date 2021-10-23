@@ -20,15 +20,9 @@ Serial.begin(9600);    // opens serial port, sets data rate to 9600 bps
 
 void loop() {
 
-if (Serial.available() > 0) {       // Serial.available(), which detects if 
-
-any data has been sent to the 
-
-                                   //serial port
+if (Serial.available() > 0) {       // Serial.available(), which detects if serial port
 
  //  Serial.read() will read the incoming character and store it in 
-
-incomingBit
 
     incomingBit = Serial.read();
 
